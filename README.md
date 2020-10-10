@@ -1,4 +1,4 @@
-# Avicena API
+# Making a Clock, a Stopwatch and a Timer using Reacr.js
 
 ![Stopwatch](https://github.com/carllosaguiar/stopwatch/blob/master/public/time.gif?raw=true)
 
