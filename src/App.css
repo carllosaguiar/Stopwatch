@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.App-footer {
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 0;
+  font-size: small;
+}
+
+.App-box-footer {
+  display: flex;
+  justify-content: center;
+}
