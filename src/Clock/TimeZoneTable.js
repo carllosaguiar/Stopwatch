@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const TableHeader = () => {
     return (
     <thead>
         <tr>
-          <th>City</th>
-          <th>Local Time</th>
+          <th></th>
+          <th></th>
         </tr>
     </thead>
     )
@@ -16,7 +16,7 @@ const TableBody = (props) => {
     return (
       <tr key={index}>
         <td>{row.timezone}</td>
-        <td>{row.localhout}</td>
+        <td>{row.localhour}</td>
       </tr>
     )
   })
@@ -25,18 +25,15 @@ const TableBody = (props) => {
 }
 
 
-class Table extends Component {
-    render() {
-      const {timeZoneData} = this.props
-  
-      return (
-        <table>
-          <TableHeader />
-          <TableBody timeZoneData={timeZoneData} />
-        </table>
-      )
-    }
-  }
+const Table = (props) => {
+    const {timeZoneData} = props
 
+    return (
+      <table>
+        <TableHeader />
+        <TableBody timeZoneData={timeZoneData} />
+      </table>
+    )
+}
 
-  export default Table
+export default Table

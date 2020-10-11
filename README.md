@@ -5,9 +5,9 @@
 
 ## TOC
 
-[Apresentação](#apresentação)
-[Requisitos](#requisitos)
-[Estrutura do Projeto](#estrutura-do-projeto)
+[Apresentação](#apresentação)   
+[Requisitos](#requisitos)   
+[Estrutura do Projeto](#estrutura-do-projeto)   
 
 ## Apresentação
 
