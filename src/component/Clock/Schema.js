@@ -1,4 +1,3 @@
-
 const bahia = {
 	timeZone: 'America/Bahia',
 	hour: 'numeric',
