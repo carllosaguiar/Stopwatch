@@ -1,26 +1,48 @@
 import React, {Component} from 'react';
-import TimeZoneTable from './Clock/TimeZoneTable'
-import timeZoneData from './Clock/Schema'
+//import TimeZoneTable from './component/Clock/TimeZoneTable'
+//import timeZoneData from './component/Clock/Schema'
+import 'primereact/resources/themes/nova-accent/theme.css'
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 import './App.css';
-
+import {Menubar} from 'primereact/menubar';
+import {withRouter} from 'react-router-dom';
 
 class App extends Component{
+
   render() {
+ 
+    const menuItems = [
+      {
+         label:'Clock',
+         icon:'pi pi-fw pi-clock',
+         command:() => this.props.history.push('/')
+      },
+      {
+         label:'Stopwatch',
+         icon:'pi pi-fw pi-user',
+         command:() => this.props.history.push('/Stopwatch')
+      },
+      {
+         label:'Timer',
+         icon:'pi pi-fw pi-comment',
+         command:() => this.props.history.push('/Timer')
+      }
+   ];
+  
     return (
       <div className="App">
-        <header className="App-header">
-          <TimeZoneTable timeZoneData={timeZoneData} />
-          <p className="App-text-center">
-            <smal>Fuso horário em suas respectivas localidades</smal>
-          </p>
-         <footer className="App-footer">
-           <div className="App-box-footer">
-                <span id="copyright">© 2020 Carlos Aguiar</span>
-           </div>
-          </footer>
-        </header>
+         <Menubar model={menuItems}/>
+         <div id="main">
+            <main>
+                <div className="content" id="content">
+                    {this.props.children}
+                </div>
+            </main>
+        </div>
       </div>
     );
   }
 }
-export default App;
+
+export default withRouter(App);
