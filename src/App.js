@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-//import TimeZoneTable from './component/Clock/TimeZoneTable'
-//import timeZoneData from './component/Clock/Schema'
 import 'primereact/resources/themes/nova-accent/theme.css'
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
