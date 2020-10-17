@@ -1,0 +1,22 @@
+.SliceTimeList__list {
+  list-style: none;
+  padding: 0px;
+  margin: 15px auto;
+}
+
+.SliceTimeList__listwrap {
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.SliceTimeList__headers {
+  width: 100%;
+}
+
+.SliceTimeList__headers span {
+  width: 50%;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}

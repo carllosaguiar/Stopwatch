@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Clock from '../src/pages/clock'
-import Stopwatch from '../src/pages/stopwatch'
+import Stopwatch from './pages/stopwatch'
 import Timer from '../src/pages/timer'
 
 
